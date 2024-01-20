@@ -23,8 +23,8 @@ let candidateAnswers=[]; //intialise candidate answers array.
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
-  let candidateName = input.question("Candidate Name: ");
-  return candidateName;
+    candidateName = input.question("Candidate Name: ");
+  //return candidateName;
 
 }
 
@@ -87,7 +87,7 @@ function gradeQuiz(candidateAnswers) {
 function runProgram() {
   askForName();
   // TODO 1.1c: Greet candidate using their name //
-  console.log("Hello " ) + askForName();
+ console.log("Hello "  + candidateName);
   askQuestion();
   gradeQuiz(this.candidateAnswers);
 }
